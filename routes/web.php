@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/data', function () {
+    User::factory()->count(5000)->create();
+    return redirect()->back();
+});

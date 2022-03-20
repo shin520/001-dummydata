@@ -191,7 +191,8 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        // ...
+        'User' =>App\Models\User::class,
+
     ])->toArray(),
 
 ];
